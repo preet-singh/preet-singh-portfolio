@@ -1,0 +1,280 @@
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background: -moz-linear-gradient(-45deg, #3e79d8 0%, #3776dc 100%);
+  background: -webkit-linear-gradient(-45deg, #3e79d8 0%, #3776dc 100%);
+  background: linear-gradient(135deg, #3e79d8 0%, #3776dc 100%);
+  opacity: 0.95;
+  color: white;
+}
+.menu > a {
+  text-decoration: none;
+  padding-right: 5%;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+nav > label {
+  float: right;
+  margin-right: 5%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-bottom: 10%;
+  text-decoration: none;
+}
+
+footer {
+    font-size: 50%;
+}
+
+header {
+  padding: 8% 0;
+  font-family: "Renner", sans-serif;
+  color: #3e79d8;
+  margin-top: -4%;
+}
+h1 {
+  padding: 10px;
+  margin: 25px;
+}
+
+h2 {
+  font-family: "Renner", monospace;
+  color: #3e79d8;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  font-size: 23px;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px;
+}
+
+#banner-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45%;
+  border-radius: 10%;
+  opacity: 0.9;
+  margin-top: -10px;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background: -moz-linear-gradient(-45deg, #faf9f9 0%, #f3f6f7 100%);
+  background: -webkit-linear-gradient(-45deg, #faf9f9 0%, #f3f6f7 100%);
+  background: linear-gradient(135deg, #faf9f9 0%, #f3f6f7 100%);
+}
+
+section:nth-child(even) {
+  background: -moz-linear-gradient(-45deg, #eeeaeb 0%, #dde4e6 100%);
+  background: -webkit-linear-gradient(-45deg, #eeeaeb 0%, #dde4e6 100%);
+  background: linear-gradient(135deg, #eeeaeb 0%, #dde4e6 100%);
+  opacity: 0.8;
+}
+
+.project-img-1 {
+  width: 40%;
+  height: 40%;
+}
+
+.social-icons {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* Desktop responsiveness */
+@media only screen and (max-width: 1300px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    border-radius: 10%;
+    opacity: 0.9;
+  }
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 24px;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+  }
+
+  body {
+    font-size: 28px;
+  }
+
+  h1,
+  h2 {
+    font-size: 34px;
+  }
+  h5 {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Tablet responsiveness */
+@media only screen and (max-width: 1000px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    border-radius: 10%;
+    opacity: 0.9;
+  }
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 20px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Mobile responsiveness */
+@media only screen and (max-width: 650px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    border-radius: 10%;
+    opacity: 0.9;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+  }
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 18px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 350px) {
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 12px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+}
