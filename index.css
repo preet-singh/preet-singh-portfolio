@@ -68,7 +68,7 @@ h2 {
 
 p {
   font-family: "Arial", sans-serif;
-  line-height: 1.6;
+  line-height: 1.9;
   font-size: 23px;
   word-wrap: break-word;
   text-align: center;
@@ -100,8 +100,8 @@ section:nth-child(even) {
 }
 
 .project-img-1 {
-  width: 40%;
-  height: 40%;
+  max-width: 50%;
+  height: auto;
 }
 
 .social-icons {
@@ -109,6 +109,15 @@ section:nth-child(even) {
   height: 50px;
 }
 
+.project-img-3 {
+  max-width: 50%;
+  height: auto;
+}
+
+.project-img-2 {
+  max-width: 50%;
+  height: auto;
+}
 
 
 /* Desktop responsiveness */
