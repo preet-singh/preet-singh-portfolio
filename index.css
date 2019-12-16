@@ -285,6 +285,20 @@ section:nth-child(even) {
 }
 
 /* Mobile responsiveness */
+@media only screen and (max-width: 750px) {
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 12px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+}
+/* Mobile responsiveness */
 @media only screen and (max-width: 350px) {
   nav,
   .menu > a {

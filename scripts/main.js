@@ -1,12 +1,21 @@
-// /* eslint-disable strict */
+"use strict";
 
-// $(document).ready(function() {
-//   //enable fullpage.js;
-//   $('#fullpage').fullpage({
-//     anchors: ['home', 'about', 'resume', 'project-section', 'contact'],
-//     scrollOverflow: true,
-//     fitToSection: false,
-//     animateAnchor: false,
-//     bigSectionsDestination: 'top',
-//   });
-// });
+function menuItemListener() {
+  $("a[href*=#]").bind("click", function(e) {
+    e.preventDefault();
+    let target = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(target).offset().top
+        },
+        1000,
+        function() {
+          location.hash = target;
+        }
+      );
+
+    return false;
+  });
+}
