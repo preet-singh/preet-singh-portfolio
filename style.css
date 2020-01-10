@@ -209,6 +209,12 @@ body {
     width: 100%;
     border: 0 none;
   }
+
+  .project{
+    margin-bottom: 2em;
+  }
+
+
   
   .work h3 {
     position: absolute;
@@ -265,18 +271,33 @@ body {
   }
   
   /* Set breakpoints at 980px, 768px, and 640px screen widths */
+  @media only screen and (min-width: 320px) {
+    .main-section{
+      width: 100%;
+    }
+    .work {
+      float: none;
+      width: 100%;
+    }
+
+    .work img {
+      width: 400px;
+      border: 0 none;
+    }
+
+  }
   
   @media only screen and (min-width: 980px) {
   
     .auth-image {
-        float: none;
-        width: 100%;
+      float: none;
+      width: 100%;
       height: auto;
     }
   
-        body { 
-            margin: 0 auto; 
-        }
+    body { 
+        margin: 0 auto; 
+    }
   
     /* portfolio page - make the examples in one column */
   
@@ -382,7 +403,7 @@ body {
     }
   
     .main-section {
-        max-width: 100%;
+      max-width: 100%;
       margin-right: 15px;
       margin-left: 15px;
     } 
@@ -398,11 +419,11 @@ body {
       position: static;
     }
   
-      nav {
-          float: none;
-          text-align: center;
+    nav {
+      float: none;
+      text-align: center;
       margin: auto;
-      }
+    }
   
     nav a {
       width: 33.3%;
